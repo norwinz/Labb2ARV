@@ -6,19 +6,19 @@ namespace Labb_2
 {
     public class Djur
     {
-        public string Race;
-        public int Eyes, Legs;
-        public string Color, Sound;
-        public bool LiveInWater;
+        public string Race ="Animal";
+        public int Eyes=2, Legs =4;
+        public string Color="Color", Sound="Sound";
+        public bool LiveInWater = false;
 
 
-        /*public Djur(int Eyes, int Legs, string Color, string Sound, bool LiveInWater)
+        /*public Djur(int CEyes, int CLegs, string CColor, string CSound, bool CLiveInWater)
             {
-            _Eyes = Eyes;
-            _Legs = Legs;
-            _Color = Color;
-            _Sound = Sound;
-            _LiveInWater = LiveInWater;
+            Eyes = CEyes;
+            Legs = CLegs;
+            Color = CColor;
+            Sound = CSound;
+            LiveInWater = CLiveInWater;
             }*/
         public void makeSound()
         {
@@ -28,7 +28,7 @@ namespace Labb_2
         {
             Console.WriteLine("This is a {0}. It has {1} eyes and {2} legs. Its color is {3}.", Race, Eyes, Legs, Color);
         }
-        public void LIW()
+        public void LIW() // LIW = Live In Water
         {
             if (LiveInWater == true)
             {

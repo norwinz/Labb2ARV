@@ -52,8 +52,15 @@ namespace Labb_2
             Fish1.printdata();
             Fish1.LIW();
             Console.WriteLine("--------------");
-            Bulldog1.printdata();
-            Bulldog1.LIW();
+            Cow1.datawithage();
+            Cow1.LIW();
+            Console.WriteLine("--------------");
+            Fish1.fishData();
+            Console.WriteLine("--------------");           
+            Chihuahua1.chiaData();
+            Chihuahua1.allLegs();
+            Console.WriteLine("--------------");
+            Bulldog1.bulldogData();
         }
     }
 }
