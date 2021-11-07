@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Labb_2
 {
-    class Fish
+    public class Fish : Djur
     {
+       public string OceanOrRiver;
     }
 }

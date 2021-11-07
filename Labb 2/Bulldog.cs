@@ -4,12 +4,8 @@ using System.Text;
 
 namespace Labb_2
 {
-    public class Cow : Djur
+    public class Bulldog : Dog
     {
-        public int Age;
-        
-
-        
-
+        public string height;
     }
 }
