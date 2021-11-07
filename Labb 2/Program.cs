@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Dan Gustafsson SUT-21 LABB 2 ARV
+using System;
 
 namespace Labb_2
 {
@@ -6,43 +7,16 @@ namespace Labb_2
     {
         static void Main(string[] args)
         {          
-            Cow Cow1 = new Cow();
-            Cow1.Race = "Cow";
-            Cow1.Eyes = 2;
-            Cow1.Legs = 4;
-            Cow1.Color = "Black";
-            Cow1.Sound = "Mooo";
-            Cow1.LiveInWater = false;
-            Cow1.Age = 8;
+            Cow Cow1 = new Cow("Cow", 2, 4, "Black", "Mooo", false, 8);
+            
+            Fish Fish1 = new Fish("Fish", 2, 4, "Orange", "Blob", true, "River");
 
-            Fish Fish1 = new Fish();
-            Fish1.Race = "Fish";
-            Fish1.Eyes = 2;
-            Fish1.Legs = 0;
-            Fish1.Color = "Orange";
-            Fish1.Sound = "Blob";
-            Fish1.LiveInWater = true;
-            Fish1.OceanOrRiver = "River";
-
-            Bulldog Bulldog1 = new Bulldog();
-            Bulldog1.Race = "Bulldog";
-            Bulldog1.Eyes = 2;
-            Bulldog1.Legs = 4;
-            Bulldog1.Color = "White";
-            Bulldog1.Sound = "Woff";
-            Bulldog1.LiveInWater = false;
-            Bulldog1.Fur = "Short";
-            Bulldog1.height = "40cm";
-
-            Chihuahua Chihuahua1 = new Chihuahua();
-            Chihuahua1.Race = "Chihuahua";
-            Chihuahua1.Eyes = 2;
-            Chihuahua1.Legs = 4;
-            Chihuahua1.Color = "Brown";
-            Chihuahua1.Sound = "Wuff";
-            Chihuahua1.LiveInWater = false;
-            Chihuahua1.Fur = "Long";
-            Chihuahua1.weight = 2;
+            Dog Dog1 = new Dog("Dog", 2, 3, "Black", "WAFF", false, "Long");
+            
+            Bulldog Bulldog1 = new Bulldog("Bulldog", 2,4,"White","Woff",false,"Short","40cm");
+           
+            Chihuahua Chihuahua1 = new Chihuahua("Chihuahua",2,4,"Brown","Wuff",false,"Long",2);
+            
 
             Cow1.makeSound();
             Fish1.makeSound();            
@@ -61,6 +35,10 @@ namespace Labb_2
             Chihuahua1.allLegs();
             Console.WriteLine("--------------");
             Bulldog1.bulldogData();
+            Console.WriteLine("--------------");
+            Dog1.printdata();
+            Dog1.furData();
+            Dog1.allLegs();
         }
     }
 }

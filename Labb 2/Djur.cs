@@ -12,14 +12,15 @@ namespace Labb_2
         public bool LiveInWater = false;
 
 
-        /*public Djur(int CEyes, int CLegs, string CColor, string CSound, bool CLiveInWater)
+        public Djur(string race, int eyes, int legs, string color, string sound, bool liveInWater)
             {
-            Eyes = CEyes;
-            Legs = CLegs;
-            Color = CColor;
-            Sound = CSound;
-            LiveInWater = CLiveInWater;
-            }*/
+            this.Race = race;
+            this.Eyes = eyes;
+            this.Legs = legs;
+            this.Color = color;
+            this.Sound = sound;
+            this.LiveInWater = liveInWater;
+            }
         public void makeSound()
         {
             Console.WriteLine("{0} goes {1}", Race, Sound);
