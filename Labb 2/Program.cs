@@ -9,7 +9,7 @@ namespace Labb_2
         {          
             Cow Cow1 = new Cow("Cow", 2, 4, "Black", "Mooo", false, 8);
             
-            Fish Fish1 = new Fish("Fish", 2, 4, "Orange", "Blob", true, "River");
+            Fish Fish1 = new Fish("Fish", 2, 0, "Orange", "Blob", true, "River");
 
             Dog Dog1 = new Dog("Dog", 2, 3, "Black", "WAFF", false, "Long");
             
